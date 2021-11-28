@@ -35,7 +35,7 @@
   const color = extractUtility(makeButtonList(colors))
 
   let styles = ['ghost', 'link', 'outline', 'active', 'disabled']
-  styles.push(...['glass', 'loading', 'no-animation'])
+  styles.push('glass', 'loading', 'no-animation')
   const style = extractUtility(makeButtonList(styles))
 	// console.log({ $$props, size, shape, color, style });
 </script>
