@@ -1,1 +1,1 @@
-<button class="btn">Welcome to SvelteKit + TailwindCSS + DaisyUI</button>
+<a href='/buttonsamples'>Button Samples</a>
