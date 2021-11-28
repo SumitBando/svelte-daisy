@@ -1,5 +1,5 @@
 <script>
-  import Button from '$lib/Button.svelte'
+  import Button from '$lib/svelte-daisy/Button.svelte'
 </script>
 
 <br/>
