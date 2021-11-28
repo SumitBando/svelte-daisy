@@ -14,6 +14,7 @@
     utilities.forEach(u => {
       if ($$props[u]) {
         if (utility) console.log('overriding spec ', utility, ' with ', u)
+        if (!u.startsWith('btn-')) u = 'btn-' + u
         utility = u
       }
     })
@@ -21,14 +22,21 @@
     return utility
   }
 
-  const sizes = ['btn-lg', 'btn-md', 'btn-sm', 'btn-xs', 'btn-wide', 'btn-block'];
-  const size = extractUtility(sizes)
-  const shapes = ['btn-circle','btn-square']
-  const shape = extractUtility(shapes)
-  const colors = ['btn-primary', 'btn-secondary', 'btn-accent', 'btn-info', 'btn-success', 'btn-warning', 'btn-error']
-  const color = extractUtility(colors)
-  const styles = ['btn-ghost', 'btn-link', 'btn-outline', 'btn-active', 'btn-disabled', 'glass', 'loading', 'no-animation']
-  const style = extractUtility(styles)
+  const makeButtonList = (/** @type {string[]} */ utilities) => 
+    utilities.map((e) => { return [e, 'btn-' + e] }).flat();
+  
+  const sizes = ['lg', 'md', 'sm', 'xs', 'wide', 'block'];
+  const size = extractUtility(makeButtonList(sizes))
+
+  const shapes = ['circle', 'square']
+  const shape = extractUtility(makeButtonList(shapes))
+
+  const colors = ['primary', 'secondary', 'accent', 'info', 'success', 'warning', 'error']
+  const color = extractUtility(makeButtonList(colors))
+
+  let styles = ['ghost', 'link', 'outline', 'active', 'disabled']
+  styles.push(...['glass', 'loading', 'no-animation'])
+  const style = extractUtility(makeButtonList(styles))
 	// console.log({ $$props, size, shape, color, style });
 </script>
 

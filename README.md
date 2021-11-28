@@ -1,5 +1,17 @@
+# What
+[DaisyUI](https://daisyui.com/) is a collection of [Tailwind](https://tailwindcss.com/) CSS components, 
+This repo wraps the DaisyUI code fragments in [Svelte](https://svelte.dev/) components for to shorten the code fragments and to avoid thinking about CSS when possible.
+E.g. the DaisyUI fragment
+```code
+<button class="btn btn-accent btn-outline">Click Me</button> 
+```
+is shortened to:
+```code
+<Button accent outline>Click Me</Button>
+```
 
-# Running
+
+## Installing
 I may turn turn these components into npm installabe packges.
 For now, just clone this project
 ```bash
@@ -30,11 +42,12 @@ npm run build
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
 
 
-# Project created with
+# Project was created with
+```bash
 npm i svelte@next
 npx svelte-add@tailwindcss
 npm i daisyui
-
+```
 
 ## Component comment
 https://github.com/sveltejs/language-tools/blob/HEAD/docs/README.md#documenting-components
