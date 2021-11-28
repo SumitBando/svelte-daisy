@@ -5,8 +5,8 @@
  
  Use:
  - \<Button>Normal\</Button> (a.k.a md or Medium)
- - \<Button btn-sm>Small\</Button>
- - \<Button btn-lg>Large\</Button>
+ - \<Button btn-sm>Small\</Button> or \<Button sm>Small\</Button>
+ - \<Button lg>Large\</Button>
 -->
 <script>
   const extractUtility = (/** @type {string[]} */ utilities) => {
