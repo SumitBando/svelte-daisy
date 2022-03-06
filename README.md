@@ -1,6 +1,7 @@
 # What
-[DaisyUI](https://daisyui.com/) is a collection of [Tailwind](https://tailwindcss.com/) CSS components, 
-This repo wraps the DaisyUI code fragments in [Svelte](https://svelte.dev/) components for to shorten the code fragments and to avoid thinking about CSS when possible.
+[DaisyUI](https://daisyui.com/) is UI library implemented with [Tailwind](https://tailwindcss.com/).
+This repo wraps the DaisyUI code fragments in [Svelte](https://svelte.dev/) components for reusability and parameterization.
+
 E.g. the DaisyUI fragment
 ```code
 <button class="btn btn-accent btn-outline">Click Me</button> 
